@@ -44,3 +44,29 @@ or:
 ```bash
 make pre-commit
 ```
+
+## How To Use App
+
+After running setup above with additional clickhouse setup as db and running clickhouse, test connection with run:
+
+```bash
+make test
+```
+
+Then to create db on clickhouse, run:
+
+```bash
+make migration
+```
+
+Main etl process, run:
+
+```bash
+make run-main
+```
+
+And to see inserted result on clickhouse, run:
+
+```bash
+make run-clickhouse
+```
